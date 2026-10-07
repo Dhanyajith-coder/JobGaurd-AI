@@ -38,9 +38,9 @@ def run_job_analysis_pipeline(raw_job_text: str, rag_context: str = "") -> dict[
 
 
 if __name__ == "__main__":
-	examples = (
-		"We are hiring a software engineer. Competitive salary, benefits, and a formal interview process.",
-		"Hiring immediately! Earn $5,000 weekly with no experience. Pay a registration fee and contact us on Telegram only.",
-	)
-	for example in examples:
-		print(run_job_analysis_pipeline(example))
+	job = """
+	Customer support executive needed urgently.
+	Earn ₹60,000 per month with no experience required.
+	Contact us on Gmail for immediate joining.
+	"""
+	print(run_job_analysis_pipeline(job))
